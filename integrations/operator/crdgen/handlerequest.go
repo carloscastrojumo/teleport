@@ -178,6 +178,7 @@ func generateSchema(file *File, groupName string, format crdFormatFunc, resp *go
 		{name: "RoleV6", opts: []resourceSchemaOption{withVersionOverride(types.V7), withVersionInKindOverride()}},
 		{name: "SAMLConnectorV2"},
 		{name: "OIDCConnectorV3"},
+		{name: "Bot", opts: []resourceSchemaOption{withVersionInKindOverride()}},
 		{name: "GithubConnectorV3"},
 		{
 			name: "LoginRule",
